@@ -1,0 +1,32 @@
+{
+  "name": "qrfiskalapp",
+  "version": "4.0.0",
+  "description": "QR invoce, get url, and get invoce details",
+  "main": "src/main/program.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "cross-env NODE_ENV=production electron-packager . QRFiskal.App --icon=src/wwwroot/img/algIcon --ignore=node_modules/electron-* --executable-name=QRFiskal.App"
+  },
+  "author": "Marijana Jerinic",
+  "license": "MIT",
+  "build": {
+    "files": [
+      "dist/**/*",
+      "src/preload/preload.js"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^34.0.2",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cross-env": "^7.0.3",
+    "fs": "^0.0.1-security",
+    "node-fetch-commonjs": "^3.3.2",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "toastify-js": "^1.12.0",
+    "xlsx": "^0.18.5"
+  }
+}
