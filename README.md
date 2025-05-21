@@ -13,6 +13,7 @@ This project analyzes how the release of popular video games affects the sales o
 ## 🚀 How to start a project
 
 pip install -r requirements.txt
+
 python main.py
 
 ## 📈 Result
